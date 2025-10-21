@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="senha" 
+    <title>Senha</title>
+</head>
+<body>
+    <h1>Bem-vindo (●'◡'●)</h1>
+<p>Digite a palavra 𝓼𝓮𝓬𝓻𝓮𝓽𝓪: </p>
+<p><span style="color: White;">Corcovado</span></p>
+<input type="text" id="palavra">
+<button onclick="verificar()">Verificar</button>
+<p id="resultado"></p>
+
+</body>
+<script>
+function verificar() {
+let valor = document.getElementById("palavra").value;
+if (valor === "Corcovado") {
+document.getElementById("resultado").innerText = "ACERTOU! :-P";
+} else {
+document.getElementById("resultado").innerText = "NÃO (⊙x⊙;) Tente novamente!";
+}
+}
+
+</script>
+</html>
