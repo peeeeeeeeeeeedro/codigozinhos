@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <title>Mudando a cor do texto</title>
+ </head>
+ <body>
+    <h2>Mudando a cor do texto</h2>
+    <p id="mensagem">Texto Original</p>
+    <button onclick="mudaTexto()">Clique Aqui</button>
+    <script>
+      function mudaTexto(){
+         let elemento = document.getElementById("mensagem")
+         elemento.innerHTML = "Texto em VERMELHO";
+         elemento.style.color = "red";
+      }   
+      </script>
+ </body>
+</html>
